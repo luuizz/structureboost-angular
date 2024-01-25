@@ -1,0 +1,22 @@
+.item-digital {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 38.4rem;
+    .icon {
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.6rem;
+    }
+    .info {
+        h6 {
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: 1.8rem;
+            color: var(--gray-600);
+        }
+    }
+}

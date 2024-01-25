@@ -1,0 +1,41 @@
+.app-card-post {
+    border: 2px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.02);
+    padding: 2.4rem;
+    height: 100%;
+    .tag {
+        display: inline-block;
+        border-radius: 10rem;
+        background: rgba(255,255,255,.1);
+        padding: .8rem 2.2rem;
+        color: var(--color-gray-100, #F5F6FA);
+        text-align: center;
+        font-family: var(--font-title);
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: .126rem;
+        text-transform: uppercase;
+        margin-bottom: 4.6rem;
+    }
+    .image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5.65rem;
+    }
+    .text {
+        width: 100%;
+        max-width: 48.2rem;
+        h6 {
+            letter-spacing: -0.066rem;
+            margin-bottom: .8rem;
+        }
+        p {
+            font-size: 1.6rem;
+            letter-spacing: -0.048rem;
+            color: var(--gray-600);
+        }
+    }
+}

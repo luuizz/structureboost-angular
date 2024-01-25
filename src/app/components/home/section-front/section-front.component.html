@@ -1,0 +1,21 @@
+<section class="app-s-front">
+    <app-grid-container [containerStyles]="{'flex-direction': 'column', 'justify-content': 'normal', 'align-items': 'normal'}">
+        <div class="app-title-text">
+            <div class="left">
+                <h3>Domine a Arte da Front-end</h3>
+                <p>Prepare-se para criar interfaces incríveis e funcionais para a web com este curso completo de front-end.</p>
+            </div>
+            <div class="right">
+                <p>Junte-se a nós neste curso de front-end e embarque em uma jornada emocionante para se tornar um desenvolvedor web altamente qualificado.</p>
+            </div>
+        </div>
+        <div class="app-all">
+            <app-card-features 
+            *ngFor="let card of cardFront"
+            [tag]="card.tagSpan"
+            [title]="card.title"
+            [description]="card.description"
+            />
+        </div>
+    </app-grid-container>
+</section>

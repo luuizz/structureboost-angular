@@ -1,0 +1,40 @@
+.app-s-front {
+    padding: 12.8rem 0;
+    .app-title-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6.4rem;
+        .left {
+            max-width: 53.9rem;
+            h3 {
+                letter-spacing: -0.12rem;
+                font-weight: 600;
+            }
+            p {
+                max-width: 45.2rem;
+                margin-top: 1.6rem;
+                color: var(--gray-600);
+                letter-spacing: -0.054rem;
+            }
+        }
+        .right {
+            max-width: 42.9rem;
+            p {
+                color: var(--gray-600);
+                letter-spacing: -0.054rem;
+            }
+        }
+    }
+    .app-all {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 3.2rem;
+        app-card-features {
+            height: 100%;
+            &:first-child {
+                grid-column: span 2;
+            }
+        }
+    }
+}

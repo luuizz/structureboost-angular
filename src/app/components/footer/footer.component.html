@@ -1,0 +1,32 @@
+<footer class="app-footer">
+    <app-grid-container [containerStyles]="{'flex-direction': 'column', 'justify-content': 'normal', 'align-items': 'normal'}">
+        <div class="main-area">
+            <div class="left">
+                <img src="assets/logo.svg" alt="Logo do Structboost" width="206" height="26">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            </div>
+            <div class="right">
+                <div *ngFor="let item of listFooter" class="item-nav">
+                    <h6>{{ item.title }}</h6>
+                    <ul>
+                        <li *ngFor="let link of item.links">
+                            <a href="#">{{ link.name }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div *ngFor="let socialItem of listSocials" class="item-nav">
+                    <h6>{{ socialItem.title }}</h6>
+                    <ul>
+                      <li *ngFor="let socialLink of socialItem.socials">
+                        <a href="#">
+                          <img [src]="socialLink.srcImg" alt="{{ socialLink.nameSocial }}" width="24" height="24">
+                          <span>{{ socialLink.nameSocial }}</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        <span class="copy">2023 © Todos os direitos reservados. <strong>Codeboost</strong></span>
+    </app-grid-container>
+</footer>

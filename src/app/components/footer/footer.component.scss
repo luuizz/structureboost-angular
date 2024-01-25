@@ -1,0 +1,66 @@
+.app-footer {
+    padding: 4.8rem 0;
+    .main-area {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255,255,255,.24);
+        padding-bottom: 6.6rem;
+        margin-bottom: 2.4rem;
+        .left {
+            max-width: 27.9rem;
+            img {
+                width: auto;
+            }
+            p {
+                margin-top: 2.4rem;
+                color: var(--gray-600);
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: -0.048rem;
+            }
+        }
+        .right {
+            flex-grow: 1;
+            max-width: 79.2rem;
+            display: flex;
+            justify-content: space-between;
+            .item-nav {
+                h6 {
+                    font-size: 1.6rem;
+                    color: var(--gray-100);
+                    font-family: var(--font-body);
+                    font-weight: 600;
+                    letter-spacing: -0.048rem;
+                    margin-bottom: 3.2rem;
+                }
+                ul {
+                    li {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        letter-spacing: -0.048rem;
+                        &:not(:last-child) {
+                            margin-bottom: 3.2rem;
+                        }
+                        a {
+                            color: var(--gray-600);
+                            transition: color .3s ease;
+                            display: flex;
+                            gap: 1.8rem;
+                            align-items: center;
+                            img {
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copy {
+        color: var(--gray-600);
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: -0.048rem;
+    }
+}

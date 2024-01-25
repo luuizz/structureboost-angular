@@ -1,0 +1,15 @@
+<header class="app-header">
+    <app-grid-container>
+        <a href="/" title="Página inicial">
+            <img ngSrc="assets/logo.svg" alt="Logo do Structboost" width="208" height="26" priority/>
+        </a>
+        <nav class="app-nav-header">
+            <ul>
+                <li *ngFor="let item of navigationItems">
+                    <a [href]="item.link">{{ item.title }}</a>
+                </li>
+            </ul>
+            <app-btn btnType="primary" btnSize="sm">Entrar em contato</app-btn>
+        </nav>
+    </app-grid-container>
+</header>
