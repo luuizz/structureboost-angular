@@ -38,5 +38,58 @@
     img {
         margin: 0 auto;
         margin-top: 6.4rem;
+        width: auto;
+    }
+    @media (max-width: 1200px) {
+        &::after {
+            height: 13rem;
+        }
+    }
+    @media (max-width: 768px) {
+        padding-top: 6rem;
+        .app-texts {
+            h1 {
+                max-width: 49rem;
+                margin: 0 auto;
+                &::before {
+                    left: 0;
+                    bottom: -0.4rem;
+                    width: 49.9rem;
+                    background-size: 100%;
+                }
+            }
+            p {
+                max-width: 41.6rem;
+            }
+            &::after {
+                bottom: 3.7rem;
+                left: 2rem;
+                max-width: 6rem;
+                height: 3.8rem;
+            }
+        }
+    }
+    @media (max-width: 560px) {
+        padding-top: 8.8rem;
+        .app-texts {
+            h1 {
+                font-size: 4rem;
+                &::before {
+                    width: 36.9rem;
+                }
+            }
+            p {
+                font-size: 1.6rem;
+                margin: 0.8rem 0 2.4rem;
+            }
+            &::after {
+                display: none;
+            }
+        }
+        img {
+            content: url("./../../../../assets/illustra-mobile.svg");
+            margin: 0;
+            margin-top: 6.4rem;
+        }
     }
 }

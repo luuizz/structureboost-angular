@@ -19,4 +19,18 @@
             color: var(--gray-600);
         }
     }
+    @media (max-width:991px) {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    @media (max-width: 560px) {
+        .info {
+            p {
+                max-width: 31.9rem;
+                font-size: 1.8rem;
+            }
+        }
+    }
 }

@@ -12,4 +12,40 @@
         border-bottom: 1px solid var(--gray-800);
         padding-bottom: 12.8rem;
     }
+    @media (max-width: 1200px) {
+        padding-top: 6.8rem;
+        ul {
+            gap: 2.2rem;
+            padding-bottom: 8.8rem;
+            li {
+                .info {
+                    p {
+                        font-size: 16px;
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        ul {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 3.2rem;
+        }
+    }
+    @media (max-width: 560px) {
+        padding-top: 8rem;
+        h3 {
+            font-size: 2.8rem;
+        }
+        ul {
+            padding-bottom: 8rem;
+            gap: 6.4rem;
+        }
+    }
 }

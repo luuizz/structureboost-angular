@@ -14,4 +14,9 @@
         margin: 0 auto;
         margin-bottom: 2.4rem;
     }
+    @media (max-width: 560px) {
+        h2 {
+            font-size: 4rem;
+        }
+    }
 }

@@ -37,4 +37,66 @@
             }
         }
     }
+    @media (max-width: 1200px) {
+        padding: 6rem 0;
+        .app-all {
+            grid-gap: 1.6rem;
+            app-card-features {
+                &:first-child, &:nth-child(2){
+                    grid-column: span 3;
+                }
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .app-title-text {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 4rem;
+            .left {
+                text-align: center;
+                max-width: 100%;
+                p {
+                    margin-top: 0.8rem;
+                    max-width: 100%;
+                }
+            }
+            .right {
+                text-align: center;
+                max-width: 100%;
+            }
+        }
+        .app-all {
+            grid-template-columns: 1fr;
+            app-card-features {
+                &:first-child, &:nth-child(2) {
+                    grid-column: initial;
+                }
+            }
+        }
+    }
+    @media (max-width: 560px) {
+        padding: 8rem 0;
+        .app-title-text {
+            .left {
+                h3 {
+                    font-size: 2.8rem;
+                    max-width: 22.7rem;
+                    margin: 0 auto;
+                    margin-bottom: 1.6rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                    max-width: 28rem;
+                    letter-spacing: -0.048rem;
+                }
+            }
+            .right {
+                display: none;
+            }
+        }
+        .app-all {
+            grid-gap: 3.2rem;
+        }
+    }
 }
